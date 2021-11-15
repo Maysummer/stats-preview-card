@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 10% 0;
+}
+.main {
+    max-width: 375px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    margin: auto;
+}
+.image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(to top, #aa5cdb4d, #aa5cdb4d), url(images/image-header-mobile.jpg);
+    background-size: 100% 100%;
+    height: 15em
+}
+.middle {
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    padding: 25px;
+}
+.get {
+    font-weight: 700;
+    font-size: large;
+    color: hsl(0, 0%, 100%);
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+}
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+.discover {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.ten, .three, .twelve {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+}
+.companies, .temp, .queries {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 9px;
+}
+@media (min-width: 700px) {
+    .image {
+        background-repeat: no-repeat;
+        background: linear-gradient(to top, #aa5cdb4d, #aa5cdb4d), url(images/image-header-desktop.jpg);
+        height: auto;
+        border-top-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        order: 2;
+    }
+   .main {
+        max-width: 1440px;
+        width: 85%;
+        height: 85%;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        align-self: auto;
+   }
+   .numbers {
+       display: flex;
+       justify-content: space-between;
+   }
+   .middle {
+       margin: 30px 60px 10px 40px;
+       text-align: left;
+       order: 1;
+   }
+}
